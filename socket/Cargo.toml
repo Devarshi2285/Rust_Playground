@@ -1,0 +1,16 @@
+[package]
+name = "ws-signaling-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "0.21", features = ["rustls-tls-native-roots"] }
+tokio-rustls = "0.25"
+rustls = "0.23"
+rustls-pemfile = "2"
+futures-util = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"

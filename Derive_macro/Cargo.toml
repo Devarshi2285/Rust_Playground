@@ -1,0 +1,9 @@
+[package]
+name = "Derive_macro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+my_macro = { path = "./my_macro" }
+my_macro_2 = {path="./my_macro_2"}
+serde_json = "1.0.149"
